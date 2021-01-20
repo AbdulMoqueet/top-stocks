@@ -34,6 +34,13 @@
     right: 0;
   }
 
+  &__bubble {
+    position: absolute;
+    left: 4px;
+    bottom: 0;
+    transform: translateY(93.8%);
+  }
+
   &__top {
     position: relative;
     background-color: $color-blue;
@@ -69,6 +76,7 @@
     border-radius: 5px;
     margin-top: 1rem;
     text-align: left;
+    position: relative;
 
     @media only screen and (max-width: $br-chat) {
       width: 100%;
@@ -153,7 +161,7 @@
   pointer-events: none;
 
   position: absolute;
-  transform: translate(2px, 14px) scale(1);
+  transform: translate(2px, 12px) scale(1);
 
   transform-origin: top left;
   transition: all 0.2s ease-out;

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import bubbleImg from './../../res/bubble.svg';
+
 
 const ChatBox = () => {
 
@@ -62,7 +64,8 @@ const ChatBox = () => {
 
                     <div className="chat-box__hi mb-1_5">
                         Hi! Let us know how we can help and we’ll respond shortly.
-                        </div>
+                        <img src={bubbleImg} alt="" className="chat-box__bubble" />
+                    </div>
 
 
                     <div className="floating-input">
@@ -81,13 +84,10 @@ const ChatBox = () => {
 
                     <textarea className="chat-box__text-area mb-1_5" cols="30" rows="8" placeholder="How can we help?*" required></textarea>
 
-
-
                     <input className="btn chat-box__send mb-1_5" type="submit" value="SEND" />
 
-
                     <p className="chat-box__captcha mb-1_5">This site is protected by reCAPTCHA and the Google
-                <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.</p>
 
                 </form>
 
